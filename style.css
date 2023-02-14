@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+body
+{
+    /* background-color: var(--colorsecundario); */
+    height: 100vh;
+    width: 100vw;
+    background: rgb(52, 100, 54);
+    background: radial-gradient(circle, rgb(52, 100, 54) 0%, rgba(0,0,0,1) 90%);
+
+
+}
+
+:root { 
+    --colorprimary: #264527;
+    --colorsecundario: #d6d1d1;
+    --colorcard: #ffffff11;
+    --colorrandom: #4e27656f;
+    --colorrandom2: #0000003f;
+    --font-size-grande: 1.6em;
+    --font-size-medio: 1.1em;
+    --font-size-peque: 1em;    
+}
+.colorprimary {
+    color: var(--colorprimary);
+}
+.colorsecundario {
+    color: var(--colorsecundario);
+}
+
+.filter-color {
+    filter: invert(70%) ;
+}
+
+a { 
+    text-decoration: none;
+}
+.li-social{
+    list-style: none;  
+}
+
+.center {
+   text-align: center;
+}
+
+.block {
+    display: block;
+}
+
+
+.wraper-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 210px;    
+    clip-path: circle();
+    background-color: #000000;
+    z-index: 1;
+}
+
+.container-color-movil {
+    background-color:var(--colorrandom);
+    backdrop-filter: blur(20px);
+    position: absolute;
+    height: 350px;
+    width: 350px;
+    z-index: 15;
+    border-radius: 50%;
+}
+
+.color-movil {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: var(--colorsecundario);
+    margin: auto;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+
+
+.img-profile {
+    display: grid;
+    width: 260px;
+    left: 105px;
+    z-index: 20;
+}
+
+.logo {
+    grid-area: logo;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.titulo-1 {
+    grid-area: titulo-1;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.info {
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    padding: 0px 40px;
+    margin-bottom: 35px;
+}
+.titulo-contacto {
+    grid-area: titulo-contacto;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.contacto-redes {
+    grid-area: contacto-redes;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35px;
+    justify-content: space-around;
+}
+.button {
+    display: grid;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    padding: 5px;
+    background-color: var(--colorcard);
+    color: var(--colorsecundario);
+    /* width: 200px;
+    height: 35px; */
+    border-radius: 7px;
+    box-shadow: 0 0 5px #231123;
+}
+
+.icon-social {
+    width: 45px;
+    height: 45px;
+}
+
+.grid-container {
+    display: grid;
+    margin: 30px auto;
+    padding: 10px;
+    max-width: 380px;
+    min-width: 328px;
+    height: max-content;
+    background-color: var(--colorcard); 
+    border-radius: 20px;
+    box-shadow: 0 0 50px #112318;
+    border-top: 1px solid #bbe59d50;
+    border-left: 1px solid #bbe59d3b;
+    border-bottom: 1px solid #bbe59d18;
+    border-right: 1px solid #bbe59d12;
+    grid-template: 
+    "logo" auto
+    "titulo-1" auto
+    "info" auto
+    "grid-container2" auto
+    "titulo-contacto" auto
+    "contacto-redes" auto
+    /
+    auto;
+}
+
+/* .nequi {
+    grid-area: nequi;
+}
+
+.mercadopago {
+    grid-area: mercadopago;
+}
+
+.paypal {
+    grid-area: paypal;
+}
+
+.daviplata {
+    grid-area: daviplata;
+} */
+
+
+/* .grid-container2 {
+    display: grid;
+    position: relative;
+    grid-gap: 20px 5px;
+    align-self: center;
+    justify-content: space-around;
+    justify-content: center;
+    height: 200px;
+    width: 300px;
+    grid-template: 
+    "nequi mercadopago" auto
+    "paypal daviplata" auto
+    /
+    auto auto;
+
+} */
+
