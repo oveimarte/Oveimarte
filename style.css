@@ -64,19 +64,6 @@ a {
     z-index: 1;
 }
 
-
-.color-movil {
-    position: absolute;
-    height: 150px;
-    width: 150px;
-    background-color: var(--colorsecundario);
-    margin: auto;
-    border-radius: 50%;
-    z-index: 10;
-}
-
-
-
 .img-profile {
     display: grid;
     width: 260px;
@@ -87,20 +74,20 @@ a {
 .logo {
     grid-area: logo;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .titulo-1 {
     grid-area: titulo-1;
     margin: auto;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .info {
     grid-area: info;
     display: flex;
     justify-content: center;
     padding: 0px 40px;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
 .titulo-contacto {
     grid-area: titulo-contacto;
@@ -112,7 +99,7 @@ a {
     grid-area: contacto-redes;
     display: flex;
     justify-content: center;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     justify-content: space-around;
 }
 .button {
