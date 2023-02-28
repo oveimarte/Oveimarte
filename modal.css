@@ -1,0 +1,75 @@
+:root { 
+    --colorprimary: #264527;
+    --colorsecundario: #d6d1d1;
+    --colorcard: #ffffff11;
+    --font-size-grande: 1.6em;
+    --font-size-medio: 1.1em;
+    --font-size-peque: 1em;    
+}
+
+.container-modal {
+    position: absolute;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(6px);
+    z-index: 300;
+}
+
+.container-modal2 {
+    position: absolute;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    backdrop-filter: blur(6px);
+    z-index: 300;
+}
+
+.contenido-modal {
+    display: grid;
+    color: aliceblue;
+    background-color: #3b504bd0; 
+    justify-content: center;
+    max-width: 250px;
+    padding: 10px;
+    height: 150px;
+    margin: auto;
+    margin-top: 200px;
+    border-radius: 15px;
+    box-shadow: 0 0 50px #112318;
+    border-top: 1px solid #bbe59d50;
+    border-left: 1px solid #bbe59d3b;
+    border-bottom: 1px solid #bbe59d18;
+    border-right: 1px solid #bbe59d12;
+    grid-template:
+    "modal-h3 cerrar" auto
+    "ove ove" auto
+    "telefono telefono" auto;
+}
+
+.modal-h3 {
+    position: relative;
+    grid-area: modal-h3;
+}
+
+.cerrar {
+    position: relative;
+    grid-area: cerrar;
+}
+
+.ove{
+    grid-area: ove;
+}
+
+.telefono {
+    grid-area: telefono;
+}
+
+#btn-modal:checked ~ .container-modal,
+#btn-modal2:checked ~ .container-modal2{
+    display: flex;
+}
+
+#btn-modal2, #btn-modal{
+    display: none;
+}

@@ -6,9 +6,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oveimar Sánchez Velasco, pintor artistico, paisajes colombianos">
     <link rel="stylesheet" typ="text/css" href="./style.css">
+    <link rel="stylesheet" typ="text/css" href="./modal.css">
     <title>Oveimarte</title>
 </head>
 <body>
+    <input type="checkbox" id="btn-modal">
+    <div class="container-modal" for="btn-modal">
+        <div class="contenido-modal">
+            <h3 class="modal-h3">Nequi</h3>
+            <label class="cerrar" for="btn-modal">X</label>
+            <ul  class="modal-ul">
+                <li class="ove">
+                    Oveimar Sanchez Velasco
+                </li> 
+                <li class="telefono">
+                    300 784-4832
+                </li>
+            </ul>
+        </div>
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+
+    <input type="checkbox" id="btn-modal2">
+    <div class="container-modal2" for="btn-modal2">
+        <div class="contenido-modal">
+            <h3 class="modal-h3">Daviplata</h3>
+            <label class="cerrar" for="btn-modal2">X</label>
+            <ul  class="modal-ul">
+                <li class="ove">
+                    Oveimar Sanchez Velasco
+                </li> 
+                <li class="telefono">
+                    300 784-4832
+                </li>
+            </ul>
+        </div>
+        <label for="btn-modal" class="cerrar-modal"></label>
+    </div>
+
+
+    
+
     <div class="grid-container">
         <div class="logo wraper-container">
             <img class="img-profile" alt="Oveimar Sanchez Velasco, pintor, paisajista colombiano" src="./archivos/perfil.jpg">
@@ -20,13 +58,7 @@
         <div class="info colorsecundario">
             <p>
                 <b class="block center">Pintor Artístico</b><br>
-                Paisajista colombiano<br>
-                <!-- local A7 (Flores, CABA)<br>
-                Entre Av. Rivadavia y Yerbal<br>               
-                Atendemos comisionistas todos los días<br>
-                Referencias comprobables<br>
-                Para pedidos y retiro en el local contáctate al
-                <b>WhatsApp</b><br> -->
+                Paisajista Colombiano<br>
             </p>
         </div>
        
@@ -47,32 +79,21 @@
                     <img class="icon-social" src="./archivos/facebook 2.png" data-toggle="tooltip" title="Facebook">
                 </a>
             </li>
-            <!-- <li class="li-social">
-                <a href="https://goo.gl/maps/7doj9JUVjNBQxEx49" target="_blank">
-                    <img class="icon-social filter-color" src="./archivos/m-ico.png" data-toggle="tooltip" title="Google Maps">
-                </a>
-            </li> -->
-            <!-- <li class="li-social filter-color" >
-                <a href="#" target="_blank">
-                    <img class="icon-social" src="./archivos/mercado libre bola.png" data-toggle="tooltip" title="Mercado Libre">
-                </a>
-            </li> -->
         </ul>
         <ul class="grid-container2">
-            <a class="button button1 nequi" href="#" target="_blank">
+            <label class="button button1 nequi" for="btn-modal">
             Nequi
-            </a>
+            </label> 
             <a class="button button2 mercadopago" href="https://link.mercadopago.com.co/oveimarte" target="_blank">
             MercadoPago
             </a>
             <a class="button button3 paypal" href="https://paypal.me/oveimarte?country.x=CO&locale.x=en_US" target="_blank">
             PayPal
             </a>
-            <a class="button button4 daviplata" href="#" target="_blank">
+            <label class="button button4 daviplata" for="btn-modal2">
             Daviplata
-            </a>
+            </label>
         </ul>
     </div>
-    
 </body>
 </html>
